@@ -14,7 +14,8 @@ const {
     PROJECT_ID,
     STORAGE_BUCKET,
     MESSAGING_SENDER_ID,
-    APP_ID
+    APP_ID,
+    MONGODB_URI
 } = process.env;
 
 assert(PORT, 'PORT is required');
@@ -31,6 +32,8 @@ module.exports = {
         projectId: PROJECT_ID,
         storageBucket: STORAGE_BUCKET,
         messagingSenderId: MESSAGING_SENDER_ID,
-        appId: APP_ID
+        appId: APP_ID,
+        MONGODB_URI:MONGODB_URI
+
     }
 }

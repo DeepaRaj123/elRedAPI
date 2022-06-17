@@ -5,15 +5,16 @@ const {addEmployee,
        editEmployee,
        deleteEmployee
       } = require('../controllers/employeeController');
+const isAuth = require("../middleware/is-auth");
 
 
 const router = express.Router();
 
-router.post('/employee', addEmployee);
-router.get('/employees', getAllEmployees);
-router.get('/employee/:id', getEmployee);
-router.patch('/employee/:id', editEmployee);
-router.delete('/employee/:id', deleteEmployee);
+router.post('/employee',isAuth, addEmployee);
+router.get('/employees',isAuth, getAllEmployees);
+router.get('/employee/:id',isAuth, getEmployee);
+router.patch('/employee/:id',isAuth, editEmployee);
+router.delete('/employee/:id',isAuth, deleteEmployee);
 
 
 module.exports = {
