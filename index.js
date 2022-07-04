@@ -19,7 +19,7 @@ app.use('/', userRoutes.routes);
 
 
 mongoose
-.connect(MONGODB_URI,{ useNewUrlParser: true,useUnifiedTopology: true })
+.connect(MONGODB_URI,{ useNewUrlParser: true,useUnifiedTopology: true})
 .then(result => {
   console.log('App is listening on url http://localhost:' + config.port);
   app.listen(process.env.port||config.port);

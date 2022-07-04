@@ -291,9 +291,14 @@ const patchUserInfo =async (req, res, next) => {
   }
    
 }
+
+const showwelcomeMessage =async (req, res, next) => {
+  res.json('This is elRed Dev API'); 
+}
    
 module.exports = {
    verifyUser,
    postUserInfo,
-   patchUserInfo
+   patchUserInfo,
+   showwelcomeMessage
 }
