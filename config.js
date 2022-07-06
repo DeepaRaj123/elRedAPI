@@ -7,7 +7,6 @@ dotenv.config();
 const {
     PORT,
     HOST,
-    HOST_URL,
     API_KEY,
     AUTH_DOMAIN,
     DATABASE_URL,

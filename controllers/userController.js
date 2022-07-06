@@ -2,12 +2,12 @@
 
 const User = require('../models/user');
 var admin = require("firebase-admin");
-var serviceAccount = require("../fir-course-76fe1-firebase-adminsdk-cbwmt-a20da17a79.json");
+var serviceAccount = require("../elred-bf28f-firebase-adminsdk-g0mnh-80c393a1e7.json");
 const jwt = require('jsonwebtoken');
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
-  databaseURL: "https://fir-course-76fe1-default-rtdb.firebaseio.com"
+  databaseURL: "https://elred-bf28f-default-rtdb.firebaseio.com"
 });
 
 
